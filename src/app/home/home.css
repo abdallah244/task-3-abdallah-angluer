@@ -1,0 +1,90 @@
+/* Page Background */
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.form-wrapper {
+    margin-top:10%;
+    margin-left: 36%;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: linear-gradient(135deg, #3b3b58, #4a5568);
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  animation: bounceIn 0.6s ease forwards ;
+  opacity: 0;
+  transform: scale(0.95) translateY(30px);
+}
+
+/* Header */
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+form input {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #2d3748;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form input:focus {
+  outline: none;
+  background: #3a4559;
+}
+
+/* Button */
+form button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Bounce Animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+  }
+  60% {
+    transform: scale(1.05) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
